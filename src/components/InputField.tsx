@@ -7,16 +7,14 @@ type InputFieldProps = {
     className?: string;
 };
 
-const InputField: React.FC<InputFieldProps> = ({ value, onChange, placeholder, className }) => {
+export const InputField: React.FC<InputFieldProps> = ({ value, onChange, className }) => {
     return (
         <input 
+            className={className}
             type="text"
-            value={value}
+            id="text"
             onChange={onChange}
-            placeholder={placeholder}
-            className={className || "flex-1 p-2 mr-2 border rounded shadow text-black focus:outline-none"}
+            value={value}
         />
     );
 };
-
-export default InputField;
