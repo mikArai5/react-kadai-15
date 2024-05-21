@@ -20,7 +20,6 @@ export const TodoList = ({
     <>
         {todoList.length !== 0 && (
         <>
-            <TodoTitle />
             <ul id="taskList" className={classes.todoListUl}>
                 {todoList.map((todo) => (
                     <li key={todo.id}>

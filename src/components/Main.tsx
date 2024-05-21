@@ -25,7 +25,7 @@ function Main() {
 
     return (
     <>
-        <TodoTitle title="TODO進捗管理" as="h1" />
+        <TodoTitle title="今日やること" as="h1" />
         <TodoAdd buttonText="追加" inputEl={inputEl} handleAddTodoListItem={handleAddTodoListItem} />
         <TodoList todoList={incompletedList} toggleTodoListItemStatus={toggleTodoListItemStatus} deleteTodoListItem={deleteTodoListItem} title="未完了TODOリスト" as="h2" />
     </>
